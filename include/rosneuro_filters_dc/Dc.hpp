@@ -3,6 +3,7 @@
 
 #include <Eigen/Dense>
 #include <rosneuro_filters/Filter.hpp>
+#include <gtest/gtest_prod.h>
   
 namespace rosneuro {
 
@@ -14,6 +15,8 @@ class Dc : public Filter<T> {
 
 		bool configure(void);
 		DynamicMatrix<T> apply(const DynamicMatrix<T>& in);
+
+    FRIEND_TEST(DcTestSuite, Constructor);
 
 };
 
