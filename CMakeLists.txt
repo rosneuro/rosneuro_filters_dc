@@ -67,7 +67,7 @@ target_link_libraries(TestDc ${GTEST_BOTH_LIBRARIES} pthread gmock ${Eigen3_LIBR
 target_link_libraries(TestDc ${PROJECT_NAME} ${catkin_LIBRARIES})
 include_directories(${GTEST_INCLUDE_DIRS} gmock pthread include include/${PROJECT_NAME}/)
 
-add_executable(dc_simloop_config test/dc_simloop_config.cpp)
+add_executable(dc_simloop_config example/dc_simloop_config.cpp)
 target_link_libraries(dc_simloop_config ${PROJECT_NAME} ${catkin_LIBRARIES}) 
 
 #################
